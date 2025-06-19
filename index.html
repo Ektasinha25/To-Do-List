@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
-    <style>
-        li{
-            list-style: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-    <input type="text" id="taskInput" placeholder="add task">
-    <button id="addBtn" onclick="addTask()">Add</button>
-    
-    <ul id="taskList"></ul>
+    <div id="myDiv" class="header">
+        <h2>My To-Do List</h2>
+        <input type="text" id="myInput" placeholder="Write your task">
+        <span class="addBtn" onclick="addTask()">Add</span>
+    </div>
+
+    <ul id="myUL"></ul>
     
     
     <script src="script.js"></script>
